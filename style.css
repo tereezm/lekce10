@@ -10,3 +10,57 @@ body {
 
 /* -------------------------------------------- */
 
+body {
+	margin: 0;
+	background-image: url(/christmas-trees-5778004_960_720.jpg);
+}
+
+.formular {
+	margin: auto;
+	text-align: left;
+	border: solid;
+	width: 600px;
+	background-color: #d9e9dc;
+	padding: 30px;
+	border-radius: 10px;
+	border-color: #d9e9dc;
+	padding-left: 50px;
+	
+}
+
+.formular h3 {
+	
+	text-transform: uppercase;
+	text-align: left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.formular h1 {
+	text-transform: uppercase;
+}
+
+input[type="text" i]{
+	width: 70%;
+	height: 50px;
+}
+input[type="password" i] {
+	width: 70%;
+	height: 50px;
+}
+input[type="color" i] {
+	width: 40%;
+	height: 50px;
+}
+
+input[type="submit" i]{
+	background-color:#2F3016 ;
+	color: white;
+	padding: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	
+}
+

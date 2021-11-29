@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,90 @@
 	<title>Formuláře</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+	<div class="formular">
+		<h1>Dopis Ježíškovi</h1>
 
-	<h1>Formuláře</h1>
-
-	<!--
+		<!--
 		Adresa pro odeslání formuláře:
 		http://formular.itgirls.cz/
 	-->
 
+		<form action="http://formular.itgirls.cz/" method="get">
+
+		<label for="jmeno">
+			<h3>Jméno</h3>
+		</label>
+		<input type="text" name="Jmeno" id="Jmeno"> <br>
+
+		<label for="Prijmeni">
+			<h3>Příjmení</h3>
+		</label>
+		<input type="text" name="Prijmeni" id="Prijmeni"> <br>
+
+		<label for="darky">
+			<h3>Jaké dárky si přeješ od Ježíška?</h3>
+		</label> 
+		<input type="text" name="darky" id="darky"> <br>
+
+		<label for="password">
+			<h3>Heslo</h3>
+		</label> 
+		<input type="password" name="password" id="password"> <br>
+
+		<label for="hodny">
+			<h3>Byl jsi hodný?</h3>
+		</label>
+
+		<input type="radio" name="hodny" id="hodnyano" value="hodnyano">
+		<label for="hodnyano">Ano, byl jsem hodný. </label> <br>
+
+		<input type="radio" name="hodny" id="hodnyne" value="hodnyne">
+		<label for="hodnyne">Ne, zlobil jsem. </label><br>
+
+		<label for="darky">
+			<h3>Dárky, co potřebuju </h3>
+		</label>
+		<input type="checkbox" name="darky" id="darky">
+		<label for="darky">Kožené kalhoty</label>
+
+		<input type="checkbox" name="darky" id="darky">
+		<label for="darky">Parfém</label>
+
+		<input type="checkbox" name="darky" id="darky">
+		<label for="darky">Bunda na snowboard</label>
+
+		<label for="mnozstvi">
+			<h3>Kolik si přeješ dostat dárků?</h3>
+		</label>
+		<input type="range" name="mnozstvi" id="mnozstvi" min="1" max="20">
+
+		<label for="barva">
+			<h3>Jaká je tvá oblíbená barva?</h3>
+		</label>
+		<input type="color" name="barva" id="barva">
+
+		<label for="cukrovi">
+			<h3>Jaké je tvé oblíbené cukrovi?</h3>
+		</label>
+		<input list="druhy" name="cukrovi" id="cukrovi">
+		<datalist id="druhy">
+			<option value="Vosí hnízda">
+			<option value="Perníčky">
+			<option value="Rohlíčky">
+			<option value="Linecký">
+		</datalist> <br>
+		<br><br>
+		<input type="submit">
+
+	</form>
+	</div>
+
+
+
 
 
 </body>
+
 </html>
